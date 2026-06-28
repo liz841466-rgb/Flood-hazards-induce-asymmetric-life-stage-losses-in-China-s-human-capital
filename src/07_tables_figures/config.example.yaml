@@ -1,0 +1,22 @@
+# Example configuration for tables and figures.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  main_results_root: "/path/to/local_outputs/main_regression_results"
+  mechanism_results_root: "/path/to/local_outputs/mechanism_results"
+  external_flood_results_root: "/path/to/local_outputs/external_flood_comparison_results"
+  eda_inputs_root: "/path/to/local_outputs/eda_inputs"
+
+outputs:
+  figures_root: "/path/to/local_outputs/final_figures"
+  supplementary_figures_root: "/path/to/local_outputs/supplementary_figures"
+  tables_root: "/path/to/local_outputs/final_tables"
+
+figure_settings:
+  dpi: 300
+  default_format: "png"
+
+notes:
+  - "This repository archives plotting code only."
+  - "PNG, PDF, CSV plotting data, and local figure outputs are not included."
+  - "Restricted microdata, rasters, shapefiles, and exposure-linked panels should remain local."

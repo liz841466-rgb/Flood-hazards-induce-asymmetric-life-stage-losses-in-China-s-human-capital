@@ -1,0 +1,19 @@
+# Example configuration for 2015 Census childhood exposure-linkage workflow.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  census2015_microdata_panel: "/path/to/local_outputs/census2015_education_microdata.parquet"
+  county_year_flood_events: "/path/to/local_outputs/county_year_return_period_flood_events.parquet"
+
+outputs:
+  county_birthyear_childhood_exposure: "/path/to/local_outputs/county_birthyear_childhood_exposure.parquet"
+  census2015_exposure_linked_panel: "/path/to/local_outputs/census2015_education_exposure_linked_panel.parquet"
+
+analysis:
+  return_periods: [2, 5, 10, 20, 50, 100]
+  childhood_age_min: 0
+  childhood_age_max: 15
+
+notes:
+  - "Raw 2015 Census microdata are restricted and are not included in this repository."
+  - "Individual-level exposure-linked panels should remain local."

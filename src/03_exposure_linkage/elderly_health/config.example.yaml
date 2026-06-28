@@ -1,0 +1,28 @@
+# Example configuration for elderly-health exposure-linkage workflow.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+project:
+  output_root: "/path/to/project_outputs"
+
+charls:
+  raw_root: "/path/to/CHARLS_raw_restricted"
+  processed_root: "/path/to/CHARLS_processed_local_only"
+  health_panel_60plus: "/path/to/local_outputs/charls_health_panel_60plus.parquet"
+  health_panel_with_index: "/path/to/local_outputs/charls_health_panel_60plus_with_index.parquet"
+
+flood_exposure:
+  city_year_events: "/path/to/local_outputs/city_year_return_period_events.parquet"
+  city_rolling_exposure_root: "/path/to/local_outputs/city_rolling_exposures"
+
+linkage:
+  city_code_crosswalk: "/path/to/local_inputs/city_code_crosswalk.csv"
+  final_elderly_health_exposure_panel: "/path/to/local_outputs/charls_health_panel_60plus_with_index_Tall_5_10_20_30y.parquet"
+
+analysis:
+  return_periods: [2, 5, 10, 20, 50, 100]
+  rolling_windows: [5, 10, 20, 30]
+  survey_years: [2011, 2013, 2015, 2018, 2020]
+
+notes:
+  - "Raw CHARLS microdata are restricted and are not included in this repository."
+  - "Exposure-linked individual-level analysis panels should remain local."

@@ -1,0 +1,19 @@
+# Example configuration for flood exposure construction.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  cama_storage_or_flood_output: "/path/to/local_hydrodynamic_model_outputs"
+  county_boundary: "/path/to/local_county_boundary_file"
+  city_boundary_or_crosswalk: "/path/to/local_city_boundary_or_crosswalk"
+
+outputs:
+  county_return_period_events: "/path/to/local_outputs/county_return_period_events.parquet"
+  city_return_period_events: "/path/to/local_outputs/city_return_period_events.parquet"
+
+parameters:
+  return_periods: [2, 5, 10, 20, 50, 100]
+  event_rule: "storage-based Gumbel return-period event identification"
+
+notes:
+  - "Raw hydrodynamic-model outputs and geospatial files are not included."
+  - "Derived county/city exposure-event tables should remain local unless explicitly anonymized and permitted."

@@ -1,0 +1,21 @@
+# Example configuration for external flood dataset comparison.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  city_gumbel_event_table: "/path/to/local_outputs/city_gumbel_return_period_events.parquet"
+  county_gumbel_event_table: "/path/to/local_outputs/county_gumbel_return_period_events.parquet"
+  dfo_event_catalogue: "/path/to/local_inputs/dfo_event_catalogue.csv"
+  gfd_or_external_flood_masks: "/path/to/local_inputs/gfd_or_external_flood_masks"
+  chinese_news_inventory_summary: "/path/to/local_inputs/chinese_news_inventory_summary.csv"
+  child_education_panel: "/path/to/local_outputs/census2015_education_panel.parquet"
+  elderly_health_panel: "/path/to/local_outputs/charls_elderly_health_panel.parquet"
+
+outputs:
+  dfo_event_comparison_results: "/path/to/local_outputs/dfo_event_comparison"
+  gfd_validation_results: "/path/to/local_outputs/gfd_event_validation"
+  chinese_news_inventory_figures: "/path/to/local_outputs/chinese_news_inventory_figures"
+  dfo_alternative_exposure_results: "/path/to/local_outputs/dfo_alternative_exposure_results"
+
+notes:
+  - "DFO/GFD raw data, Chinese news inventory records, flood masks, rasters, and local comparison outputs are not included."
+  - "Restricted microdata and exposure-linked panels should remain local."

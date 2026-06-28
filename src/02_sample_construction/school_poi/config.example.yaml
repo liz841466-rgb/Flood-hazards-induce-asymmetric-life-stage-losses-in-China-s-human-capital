@@ -1,0 +1,33 @@
+# Example configuration for school POI / education-facility construction.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+project:
+  output_root: "/path/to/project_outputs"
+
+school_poi:
+  raw_poi_root: "/path/to/school_poi_raw_local_only"
+  processed_root: "/path/to/school_poi_processed_local_only"
+
+  province_workflow:
+    province_notebook_root: "/path/to/province_notebooks"
+    representative_provinces:
+      - "Anhui"
+      - "Beijing"
+      - "Fujian"
+
+  auxiliary_data:
+    euluc_root: "/path/to/EULUC"
+    clcd_root: "/path/to/CLCD"
+    nighttime_light_root: "/path/to/nighttime_light"
+    population_density_root: "/path/to/population_density"
+    landuse_root: "/path/to/urban_landuse_layers"
+
+outputs:
+  province_cleaned_root: "/path/to/local_outputs/school_poi/province_cleaned"
+  national_school_poi: "/path/to/local_outputs/school_poi/national_school_poi.parquet"
+  school_point_auxiliary_attributes: "/path/to/local_outputs/school_poi/school_auxiliary_attributes.parquet"
+  inferred_establishment_year: "/path/to/local_outputs/school_poi/school_establishment_year.parquet"
+
+notes:
+  - "Raw POI records, geospatial rasters, and school-level processed outputs are not included in this repository."
+  - "The archived scripts preserve the existing Jupyter workflow for auditability."

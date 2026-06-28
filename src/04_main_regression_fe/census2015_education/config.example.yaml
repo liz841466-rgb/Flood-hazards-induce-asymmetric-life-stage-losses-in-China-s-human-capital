@@ -1,0 +1,27 @@
+# Example configuration for 2015 Census education fixed-effects regression workflow.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  census2015_exposure_linked_panel: "/path/to/local_outputs/census2015_education_exposure_linked_panel.parquet"
+  risk_zone_table: "/path/to/local_inputs/child_flood_risk_zones.csv"
+
+outputs:
+  regression_results_root: "/path/to/local_outputs/census2015_education_regression_results"
+  tables_root: "/path/to/local_outputs/census2015_education_tables"
+  figures_root: "/path/to/local_outputs/census2015_education_figures"
+
+analysis:
+  return_periods: [2, 5, 10, 20, 50, 100]
+  baseline_return_period: 10
+  childhood_age_min: 0
+  childhood_age_max: 15
+
+fixed_effects:
+  county_fe: true
+  birth_year_fe: true
+  province_birthyear_fe: true
+  cluster_level: "county"
+
+notes:
+  - "Raw 2015 Census microdata are restricted and are not included in this repository."
+  - "Individual-level panels and local regression outputs should remain local."

@@ -1,0 +1,29 @@
+# Example configuration for 2015 census sample construction.
+# Copy to config.yaml and edit local paths before running the scripts.
+
+project:
+  output_root: "/path/to/project_outputs"
+
+census2015:
+  raw_root: "/path/to/restricted_2015_census_microdata"
+  processed_root: "/path/to/local_processed_outputs_not_for_github"
+
+  raw_files:
+    stata_file: "/path/to/spss_2015.dta"
+    fixed_width_or_dat_file: "/path/to/2015spss.dat"
+
+  outputs:
+    microdata_base: "/path/to/local_outputs/edu_micro_2015.parquet"
+    county_birthyear_scaffold: "/path/to/local_outputs/county_birthyear_scaffold.csv"
+    diagnostics: "/path/to/local_outputs/diagnostics"
+
+sample_definition:
+  final_birth_year_min: 1980
+  final_birth_year_max: 2000
+  final_age_min_2015: 15
+  final_age_max_2015: 35
+
+notes:
+  restricted_data: >
+    Raw 2015 population census microdata are restricted and are not included
+    in the GitHub repository.

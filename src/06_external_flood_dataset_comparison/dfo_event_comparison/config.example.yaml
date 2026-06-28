@@ -1,0 +1,14 @@
+# Example configuration for DFO event comparison.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  city_gumbel_event_table: "/path/to/local_outputs/city_gumbel_return_period_events.parquet"
+  county_gumbel_event_table: "/path/to/local_outputs/county_gumbel_return_period_events.parquet"
+  dfo_event_catalogue: "/path/to/local_inputs/dfo_event_catalogue.csv"
+  city_county_crosswalk: "/path/to/local_inputs/city_county_crosswalk.csv"
+
+outputs:
+  comparison_results_root: "/path/to/local_outputs/dfo_gumbel_event_comparison"
+
+notes:
+  - "DFO raw data and derived event-matching outputs are not included in this repository."

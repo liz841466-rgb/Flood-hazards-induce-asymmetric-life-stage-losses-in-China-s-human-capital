@@ -1,0 +1,31 @@
+# Example configuration for elderly-health fixed-effects regression workflow.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+project:
+  output_root: "/path/to/project_outputs"
+
+inputs:
+  elderly_health_exposure_panel: "/path/to/local_outputs/charls_health_panel_60plus_with_index_Tall_5_10_20_30y.parquet"
+  risk_zone_table: "/path/to/local_inputs/high_low_risk_zones.csv"
+  disease_outcome_table: "/path/to/local_inputs/health_dimension_or_disease_outcomes.parquet"
+
+outputs:
+  regression_results_root: "/path/to/local_outputs/elderly_health_regression_results"
+  tables_root: "/path/to/local_outputs/elderly_health_tables"
+  figures_root: "/path/to/local_outputs/elderly_health_figures"
+
+analysis:
+  return_periods: [2, 5, 10, 20, 50, 100]
+  rolling_windows: [5, 10, 20, 30]
+  baseline_window_years: 5
+  baseline_return_period: 10
+
+fixed_effects:
+  individual_fe: true
+  year_fe: true
+  province_year_fe: true
+  cluster_level: "city"
+
+notes:
+  - "Raw CHARLS microdata are restricted and are not included in this repository."
+  - "Exposure-linked individual-level panels and local regression outputs should remain local."
