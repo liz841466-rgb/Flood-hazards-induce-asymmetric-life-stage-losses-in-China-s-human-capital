@@ -1,15 +1,15 @@
-# Example configuration for elderly-health mechanism analysis.
+﻿# Example configuration for elderly-health mechanism analysis.
 # Copy this file to config.yaml and edit local paths before running scripts.
 
 inputs:
-  elderly_health_exposure_panel: "/path/to/local_outputs/charls_health_panel_60plus_with_exposure.parquet"
-  medical_expenditure_panel: "/path/to/local_outputs/charls_medical_expenditure_panel.parquet"
-  healthcare_access_panel: "/path/to/local_outputs/charls_healthcare_access_panel.parquet"
+  elderly_health_exposure_panel: "<set-local-path>"
+  medical_expenditure_panel: "<set-local-path>"
+  healthcare_access_panel: "<set-local-path>"
 
 outputs:
-  mechanism_results_root: "/path/to/local_outputs/elderly_health_mechanism_results"
-  tables_root: "/path/to/local_outputs/elderly_health_mechanism_tables"
-  figures_root: "/path/to/local_outputs/elderly_health_mechanism_figures"
+  mechanism_results_root: "<set-local-path>"
+  tables_root: "<set-local-path>"
+  figures_root: "<set-local-path>"
 
 mechanisms:
   - "medical expenditure"

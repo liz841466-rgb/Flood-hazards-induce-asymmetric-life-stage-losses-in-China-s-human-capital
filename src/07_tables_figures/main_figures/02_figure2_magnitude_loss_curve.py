@@ -266,7 +266,7 @@ def get_health_curve(df_Tagg: pd.DataFrame, sample: str):
     ci_high_pts = sub["97.5%"].to_numpy(float)
     p_vals = sub["Pr(>|t|)"].to_numpy(float)
 
-    print(f"\n[INFO] DFO health β(T) meta-regression for sample={sample}")
+    print(f"\n[INFO] CaMa-Flood health β(T) meta-regression for sample={sample}")
     curve = fit_beta_T_curve(
         T_vals,
         est,
@@ -317,7 +317,7 @@ This public compact repository keeps notebook-export code for workflow auditabil
         curve_health["T_grid"],
         curve_health["beta_grid"],
         linestyle="--",
-        label="健康 β(T) – DFO",
+        label="健康 β(T) – CaMa",
     )
     ax2.fill_between(
         curve_health["T_grid"],
@@ -403,7 +403,7 @@ This public compact repository keeps notebook-export code for workflow auditabil
 
     ax1.set_xlabel("洪水返回期 T（年，log 标度）")
     ax1.set_ylabel("β(T) – 教育 (CaMa)")
-    ax2.set_ylabel("β(T) – 健康 (DFO)")
+    ax2.set_ylabel("β(T) – 健康 (CaMa)")
 
     ax1.set_title(
         "洪水返回期 T 的非线性效应 β(T)\n"
@@ -854,7 +854,7 @@ def plot_twinx(curve_storage, curve_health, sample: str):
     ax2.plot(
         curve_health["T_grid"],
         curve_health["beta_grid"],
-        label="Health loss (DFO)",
+        label="Health loss (CaMa)",
         color=rgba(HEALTH_LINE_COLOR, HEALTH_LINE_ALPHA),
         linewidth=HEALTH_LINE_WIDTH,
         zorder=2,
@@ -1456,7 +1456,7 @@ def plot_twinx(curve_storage, curve_health, sample: str):
     ax2.plot(
         xg_health,
         curve_health["beta_grid"],
-        label="Health loss (DFO)",
+        label="Health loss (CaMa)",
         color=rgba(HEALTH_LINE_COLOR, HEALTH_LINE_ALPHA),
         linewidth=HEALTH_LINE_WIDTH,
         zorder=2,

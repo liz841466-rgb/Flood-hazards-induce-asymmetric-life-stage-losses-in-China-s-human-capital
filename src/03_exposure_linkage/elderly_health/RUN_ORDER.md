@@ -24,19 +24,11 @@ the original workflow rather than refactored into a new production pipeline.
    - Source notebook: internal original notebook (non-public source filename omitted).
    - Purpose: Merge CHARLS elderly-health panel with city-level flood exposure
 
-## Optional diagnostics and bridge scripts
+## Supporting diagnostic script
 
 5. `05_diagnostics_city_county_crosswalk.py`
    - Source notebook: internal original notebook (non-public source filename omitted).
    - Purpose: Diagnose city-county spatial-key correspondence
-
-6. `06_legacy_city_gumbel_exposure_version.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: Earlier city-level Gumbel exposure version
-
-7. `07_bridge_exposure_linkage_and_pilot_fe.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: Bridge script for exposure linkage and pilot FE inference
 
 ## Notes
 

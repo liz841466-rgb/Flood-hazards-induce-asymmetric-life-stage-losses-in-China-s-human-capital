@@ -32,21 +32,6 @@ the original workflow rather than refactored into a new production pipeline.
    - Source notebook: internal original notebook (non-public source filename omitted).
    - Purpose: Major mechanism categories
 
-## Optional / legacy / EDA notebooks
-
-7. `07_alternative_mechanism_strategy_legacy.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: Alternative mechanism strategy
-
-8. `08_eda_mechanism_names.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: EDA for mechanism names
-
-9. `09_eda_medical_expenditure_and_healthcare_access.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: EDA for medical expenditure and healthcare access
-
 ## Notes
 
 - Raw survey data, individual-level panels, POI records, and local result outputs are not included.
-- Optional, legacy, abandoned, and EDA notebooks are retained for auditability.

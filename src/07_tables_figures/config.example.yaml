@@ -1,16 +1,16 @@
-# Example configuration for tables and figures.
+﻿# Example configuration for tables and figures.
 # Copy this file to config.yaml and edit local paths before running scripts.
 
 inputs:
-  main_results_root: "/path/to/local_outputs/main_regression_results"
-  mechanism_results_root: "/path/to/local_outputs/mechanism_results"
-  external_flood_results_root: "/path/to/local_outputs/external_flood_comparison_results"
-  eda_inputs_root: "/path/to/local_outputs/eda_inputs"
+  main_results_root: "<set-local-path>"
+  mechanism_results_root: "<set-local-path>"
+  external_flood_results_root: "<set-local-path>"
+  eda_inputs_root: "<set-local-path>"
 
 outputs:
-  figures_root: "/path/to/local_outputs/final_figures"
-  supplementary_figures_root: "/path/to/local_outputs/supplementary_figures"
-  tables_root: "/path/to/local_outputs/final_tables"
+  figures_root: "<set-local-path>"
+  supplementary_figures_root: "<set-local-path>"
+  tables_root: "<set-local-path>"
 
 figure_settings:
   dpi: 300

@@ -1,0 +1,17 @@
+﻿# Example configuration for GFD/POD-style event validation.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  model_flood_event_masks: "<set-local-path>"
+  external_observed_flood_masks: "<set-local-path>"
+
+outputs:
+  validation_results_root: "<set-local-path>"
+
+metrics:
+  - "POD"
+  - "FAR"
+  - "CSI"
+
+notes:
+  - "Raw GFD/external flood masks and local validation rasters are not included."

@@ -10,10 +10,7 @@ exposure and rolling exposure windows.
 
 - Required exposure-linkage notebooks found: 4
 - Required exposure-linkage notebooks missing: 0
-- Optional diagnostic/bridge notebooks found: 3
-- Optional diagnostic/bridge notebooks missing: 0
-- Related notebooks recorded: 8
-- Metadata/documentation files copied: 19
+- Supporting diagnostic scripts found: 1
 
 ## Main files
 
@@ -38,16 +35,7 @@ estimation code, so it is marked as a mixed exposure-linkage and regression file
 
 ### `05_diagnostics_city_county_crosswalk.py`
 
-Optional diagnostic code for city-county spatial-key correspondence.
-
-### `06_legacy_city_gumbel_exposure_version.py`
-
-Earlier/alternative city-level Gumbel exposure-construction notebook.
-
-### `07_bridge_exposure_linkage_and_pilot_fe.py`
-
-Bridge notebook containing exposure linkage and preliminary fixed-effects
-inference.
+Supporting diagnostic code for city-county spatial-key correspondence.
 
 ## Data restrictions
 

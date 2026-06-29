@@ -23,21 +23,6 @@ the original workflow rather than refactored into a new production pipeline.
    - Source notebook: internal original notebook (non-public source filename omitted).
    - Purpose: Spring-autumn schooling seasonality mechanism
 
-## Optional / legacy / EDA notebooks
-
-5. `05_legacy_education_investment_version.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: Earlier education investment mechanism version
-
-6. `06_legacy_school_facility_version.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: Earlier school facility mechanism version
-
-7. `07_abandoned_urban_rural_school_facility_split.py`
-   - Source notebook: internal original notebook (non-public source filename omitted).
-   - Purpose: Abandoned urban-rural school-facility split strategy
-
 ## Notes
 
 - Raw survey data, individual-level panels, POI records, and local result outputs are not included.
-- Optional, legacy, abandoned, and EDA notebooks are retained for auditability.

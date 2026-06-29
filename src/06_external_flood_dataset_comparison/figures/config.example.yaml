@@ -1,0 +1,12 @@
+﻿# Example configuration for external flood comparison figures.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  dfo_child_intensity_results: "<set-local-path>"
+  dfo_elderly_intensity_results: "<set-local-path>"
+
+outputs:
+  figures_root: "<set-local-path>"
+
+notes:
+  - "Local figure outputs are not included in this repository."

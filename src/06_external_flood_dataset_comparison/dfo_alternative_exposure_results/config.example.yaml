@@ -1,0 +1,15 @@
+﻿# Example configuration for DFO alternative-exposure robustness analyses.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+inputs:
+  dfo_event_or_exposure_table: "<set-local-path>"
+  census2015_education_panel: "<set-local-path>"
+  charls_elderly_health_panel: "<set-local-path>"
+
+outputs:
+  dfo_robustness_results_root: "<set-local-path>"
+  tables_root: "<set-local-path>"
+  figures_root: "<set-local-path>"
+
+notes:
+  - "Restricted microdata and exposure-linked panels are not included."

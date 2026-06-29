@@ -1,13 +1,13 @@
-# Example configuration for 2015 Census childhood exposure-linkage workflow.
+﻿# Example configuration for 2015 Census childhood exposure-linkage workflow.
 # Copy this file to config.yaml and edit local paths before running scripts.
 
 inputs:
-  census2015_microdata_panel: "/path/to/local_outputs/census2015_education_microdata.parquet"
-  county_year_flood_events: "/path/to/local_outputs/county_year_return_period_flood_events.parquet"
+  census2015_microdata_panel: "<set-local-path>"
+  county_year_flood_events: "<set-local-path>"
 
 outputs:
-  county_birthyear_childhood_exposure: "/path/to/local_outputs/county_birthyear_childhood_exposure.parquet"
-  census2015_exposure_linked_panel: "/path/to/local_outputs/census2015_education_exposure_linked_panel.parquet"
+  county_birthyear_childhood_exposure: "<set-local-path>"
+  census2015_exposure_linked_panel: "<set-local-path>"
 
 analysis:
   return_periods: [2, 5, 10, 20, 50, 100]

@@ -1,0 +1,16 @@
+﻿# Example configuration for CHARLS code archive.
+# Copy to config.yaml locally and edit paths. Do not commit config.yaml.
+
+paths:
+  charls_notebook_root: "<set-local-path>"
+  local_charls_raw_root: "<set-local-path>"
+  local_charls_processed_root: "<set-local-path>"
+  output_root: "<set-local-path>"
+
+github:
+  root: "<set-local-path>"
+
+notes:
+  - "Raw CHARLS data are restricted and are not included in this repository."
+  - "Individual-level merged outputs should not be committed."
+  - "This folder archives code logic from the original notebooks."

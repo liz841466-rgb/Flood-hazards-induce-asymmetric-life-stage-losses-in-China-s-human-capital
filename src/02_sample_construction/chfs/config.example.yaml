@@ -1,0 +1,35 @@
+﻿# Example configuration for CHFS/CFHS household education mechanism workflow.
+# Copy this file to config.yaml and edit local paths before running scripts.
+
+project:
+  output_root: "<set-local-path>"
+
+chfs:
+  raw_root: "<set-local-path>"
+  processed_root: "<set-local-path>"
+
+  waves:
+    2011:
+      notebook_stage: "2011 household variables"
+      raw_files_root: "<set-local-path>"
+    2013:
+      notebook_stage: "2013 household variables"
+      raw_files_root: "<set-local-path>"
+    2015:
+      notebook_stage: "2015 household variables"
+      raw_files_root: "<set-local-path>"
+    2017:
+      notebook_stage: "2017 household variables"
+      raw_files_root: "<set-local-path>"
+    2019:
+      notebook_stage: "2019 household variables"
+      raw_files_root: "<set-local-path>"
+
+outputs:
+  wave_tables_root: "<set-local-path>"
+  unbalanced_panel: "<set-local-path>"
+  diagnostics_root: "<set-local-path>"
+
+notes:
+  - "Raw CHFS/CFHS microdata are restricted and are not included in this repository."
+  - "Individual- and household-level processed outputs should remain local."

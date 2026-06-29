@@ -1,15 +1,15 @@
-# Example configuration for child-education mechanism analysis.
+﻿# Example configuration for child-education mechanism analysis.
 # Copy this file to config.yaml and edit local paths before running scripts.
 
 inputs:
-  census2015_exposure_linked_panel: "/path/to/local_outputs/census2015_education_exposure_linked_panel.parquet"
-  chfs_household_panel: "/path/to/local_outputs/chfs_unbalanced_household_panel.parquet"
-  school_poi_panel: "/path/to/local_outputs/school_poi_mechanism_panel.parquet"
+  census2015_exposure_linked_panel: "<set-local-path>"
+  chfs_household_panel: "<set-local-path>"
+  school_poi_panel: "<set-local-path>"
 
 outputs:
-  mechanism_results_root: "/path/to/local_outputs/child_education_mechanism_results"
-  tables_root: "/path/to/local_outputs/child_education_mechanism_tables"
-  figures_root: "/path/to/local_outputs/child_education_mechanism_figures"
+  mechanism_results_root: "<set-local-path>"
+  tables_root: "<set-local-path>"
+  figures_root: "<set-local-path>"
 
 mechanisms:
   - "household education investment"

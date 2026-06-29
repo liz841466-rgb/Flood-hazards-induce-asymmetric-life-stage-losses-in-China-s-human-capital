@@ -1,18 +1,18 @@
-# Example configuration for elderly-health fixed-effects regression workflow.
+﻿# Example configuration for elderly-health fixed-effects regression workflow.
 # Copy this file to config.yaml and edit local paths before running scripts.
 
 project:
-  output_root: "/path/to/project_outputs"
+  output_root: "<set-local-path>"
 
 inputs:
-  elderly_health_exposure_panel: "/path/to/local_outputs/charls_health_panel_60plus_with_index_Tall_5_10_20_30y.parquet"
-  risk_zone_table: "/path/to/local_inputs/high_low_risk_zones.csv"
-  disease_outcome_table: "/path/to/local_inputs/health_dimension_or_disease_outcomes.parquet"
+  elderly_health_exposure_panel: "<set-local-path>"
+  risk_zone_table: "<set-local-path>"
+  disease_outcome_table: "<set-local-path>"
 
 outputs:
-  regression_results_root: "/path/to/local_outputs/elderly_health_regression_results"
-  tables_root: "/path/to/local_outputs/elderly_health_tables"
-  figures_root: "/path/to/local_outputs/elderly_health_figures"
+  regression_results_root: "<set-local-path>"
+  tables_root: "<set-local-path>"
+  figures_root: "<set-local-path>"
 
 analysis:
   return_periods: [2, 5, 10, 20, 50, 100]

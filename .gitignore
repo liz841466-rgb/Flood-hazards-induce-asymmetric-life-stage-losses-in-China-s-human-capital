@@ -316,6 +316,7 @@ PUBLIC_COMPACT_NOTES.md
 !REPRODUCIBILITY_NOTES.md
 !SECURITY_AND_SENSITIVE_DATA_AUDIT.md
 !src/
+!src/**/
 !src/**/README.md
 !src/**/RUN_ORDER.md
 !src/**/config.example.yaml

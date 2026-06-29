@@ -1,21 +1,21 @@
-# Example configuration for 2015 census sample construction.
+﻿# Example configuration for 2015 census sample construction.
 # Copy to config.yaml and edit local paths before running the scripts.
 
 project:
-  output_root: "/path/to/project_outputs"
+  output_root: "<set-local-path>"
 
 census2015:
-  raw_root: "/path/to/restricted_2015_census_microdata"
-  processed_root: "/path/to/local_processed_outputs_not_for_github"
+  raw_root: "<set-local-path>"
+  processed_root: "<set-local-path>"
 
   raw_files:
-    stata_file: "/path/to/spss_2015.dta"
-    fixed_width_or_dat_file: "/path/to/2015spss.dat"
+    stata_file: "<set-local-path>"
+    fixed_width_or_dat_file: "<set-local-path>"
 
   outputs:
-    microdata_base: "/path/to/local_outputs/edu_micro_2015.parquet"
-    county_birthyear_scaffold: "/path/to/local_outputs/county_birthyear_scaffold.csv"
-    diagnostics: "/path/to/local_outputs/diagnostics"
+    microdata_base: "<set-local-path>"
+    county_birthyear_scaffold: "<set-local-path>"
+    diagnostics: "<set-local-path>"
 
 sample_definition:
   final_birth_year_min: 1980

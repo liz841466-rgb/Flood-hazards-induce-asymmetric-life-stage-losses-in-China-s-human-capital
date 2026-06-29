@@ -1,32 +1,32 @@
-# Example configuration for school POI / education-facility construction.
+﻿# Example configuration for school POI / education-facility construction.
 # Copy this file to config.yaml and edit local paths before running scripts.
 
 project:
-  output_root: "/path/to/project_outputs"
+  output_root: "<set-local-path>"
 
 school_poi:
-  raw_poi_root: "/path/to/school_poi_raw_local_only"
-  processed_root: "/path/to/school_poi_processed_local_only"
+  raw_poi_root: "<set-local-path>"
+  processed_root: "<set-local-path>"
 
   province_workflow:
-    province_notebook_root: "/path/to/province_notebooks"
+    province_notebook_root: "<set-local-path>"
     representative_provinces:
       - "Anhui"
       - "Beijing"
       - "Fujian"
 
   auxiliary_data:
-    euluc_root: "/path/to/EULUC"
-    clcd_root: "/path/to/CLCD"
-    nighttime_light_root: "/path/to/nighttime_light"
-    population_density_root: "/path/to/population_density"
-    landuse_root: "/path/to/urban_landuse_layers"
+    euluc_root: "<set-local-path>"
+    clcd_root: "<set-local-path>"
+    nighttime_light_root: "<set-local-path>"
+    population_density_root: "<set-local-path>"
+    landuse_root: "<set-local-path>"
 
 outputs:
-  province_cleaned_root: "/path/to/local_outputs/school_poi/province_cleaned"
-  national_school_poi: "/path/to/local_outputs/school_poi/national_school_poi.parquet"
-  school_point_auxiliary_attributes: "/path/to/local_outputs/school_poi/school_auxiliary_attributes.parquet"
-  inferred_establishment_year: "/path/to/local_outputs/school_poi/school_establishment_year.parquet"
+  province_cleaned_root: "<set-local-path>"
+  national_school_poi: "<set-local-path>"
+  school_point_auxiliary_attributes: "<set-local-path>"
+  inferred_establishment_year: "<set-local-path>"
 
 notes:
   - "Raw POI records, geospatial rasters, and school-level processed outputs are not included in this repository."
